@@ -1,2 +1,10 @@
-# Web
-HTML5, CSS3, JavaScript, jQuery
+# 🌏 Web 🌎
+
+Studying abt **FrontEnd** 💻<br>
+
+- HTML5
+- CSS3
+- JavaScript
+- jQuery
+
+<!--END-->
