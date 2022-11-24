@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+    <title>후손 선택자</title>
+    <style>
+        ol li  {    color: hotpink;    }                         /* 후손: 자식 + 자손 */
+        ol > li  {    font-size: x-large; font-weight: bold;    }   /* 자식 */
+        /* 후손 선택자 */
+        #header h1   {   color: aqua;   }
+        /* #header h1, #header h2   {   color: aqua;   } */
+        #section h1   {   color: orchid;   }
+    </style>
+</head>
+<body style="margin-top: 40px; margin-left: 40px;">
+    <h3>후손 선택자</h3>
+    <hr>
+    <ol>
+        <li>CSS3 선택자</li>
+        <li>기본 선택자</li>
+        <ul>
+            <li>전체 선택자</li>
+            <li>태그 선택자</li>
+            <li>아이디 선택자와 클래스 선택자</li>
+        </ul>
+    </ol>
+    <h1>또 다른 li</h1>
+    <ul>
+        <li>다른 li 1</li>
+        <li>다른 li 2</li>
+    </ul>
+    <div id="header">
+        <h1 class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum saepe fugit sunt iste perferendis sapiente veniam distinctio dolore, earum, quia dicta! Quidem dignissimos cupiditate tenetur? Eum commodi laudantium libero id.</h1>
+        <div id="nav">
+            <h1>Navigation</h1>
+        </div>
+    </div>
+    <div id="section">
+        <h1 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat repellendus placeat omnis dicta, ea accusantium. Laudantium quos magni aliquam eum, quasi ipsam assumenda sed reiciendis, debitis incidunt, eaque architecto quo!</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto impedit similique saepe, asperiores velit tenetur. Est ipsum illum porro quidem corrupti at iste ad modi debitis cumque. Quae, exercitationem corrupti.</p>
+    </div>
+</body>
+</html>
