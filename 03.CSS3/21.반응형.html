@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 웹</title>
+    <style>
+        h1 { color: teal; font-size: x-large; }
+        body { background-color: paleturquoise; }
+        @media screen and (max-width: 960px) {      /* PAD */
+            h1 { color: lawngreen; }
+            body { background-color: forestgreen; }
+        }
+        @media screen  and (max-width: 768px) {     /* SMART PHONE */
+            h1 { color: hotpink; }
+            body { background-color: blanchedalmond; }
+        }
+        @media print {                              /* PRINTER */
+            body { background-color: papayawhip; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ipsum et sed aliquid fuga consequuntur ratione dolorem? Dolore beatae in tempore, ipsam vel praesentium neque officia quis non, impedit harum?</p>
+</body>
+</html>
