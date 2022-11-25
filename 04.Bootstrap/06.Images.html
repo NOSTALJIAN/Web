@@ -9,29 +9,30 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
-    <style>
-        /* .row { background-color: lightgray; } */
-    </style>
 </head>
 <body>
-    <div class="container-fluid p-3 bg-dark text-white text-center">
-        <h1>My Bootstrap Page</h1>
+    <div class="container-fluid p-4 bg-dark text-white text-center">
+        <h1>Jian's Bootstrap Page</h1>
         <p>IMAGES</p>
     </div>
 
+    <!-- 이미지 모양 -->
     <div class="container mt-5">
         <div class="row">
             <div class="col-4">
+                <!-- 둥근 모서리 -->
                 <h2>Rounded Corners</h2>
                 <p>The .rounded class adds rounded corners to an image:</p>
                 <img src="https://github.com/NOSTALJIAN/TIL/blob/master/IMAGE/aGirl_B:W.gif?raw=true" class="rounded" alt="Cinque Terre" width="304">
             </div>
             <div class="col-4">
+                <!-- 원 모양 이미지 -->
                 <h2>Circle</h2>
                 <p>The .rounded-circle class shapes the image to a circle:</p>
                 <img src="https://github.com/NOSTALJIAN/TIL/blob/master/IMAGE/aGirl_B:W.gif?raw=true" class="rounded-circle" alt="Cinque Terre" width="304">
             </div>
             <div class="col-4">
+                <!-- 썸네일 -->
                 <h2>Thumbnail</h2>
                 <p>The .img-thumbnail class creates a thumbnail of the image:</p>
                 <img src="https://github.com/NOSTALJIAN/TIL/blob/master/IMAGE/aGirl_B:W.gif?raw=true" class="img-thumbnail" alt="Cinque Terre" width="304">
@@ -39,7 +40,10 @@
         </div>
     </div>
     <br><hr>
+
+    <!-- 이미지 정렬 -->
     <div class="container mt-4">
+        <!-- 이미지 좌측 or 우측 정렬 -->
         <h2 class="mt-2">Aligning images</h2>
         <p>Use the float classes to the left or to the right:</p>
             <div class="row">
@@ -50,12 +54,16 @@
             </div>
     </div>
     <br><hr>
+
+    <!-- 중심 이미지 -->
     <div class="container mt-4">
         <h2>Centered Image</h2>
         <p>Center an image by adding the utility classes .mx-auto (margin:auto) and .d-block (display:block) to the image:</p>
         <img src="https://github.com/NOSTALJIAN/TIL/blob/master/IMAGE/aGirl_B:W.gif?raw=true" class="mx-auto d-block" style="width: 50%;">
     </div>
     <br><hr>
+
+    <!-- 반응형 크기 조절 이미지 -->
     <div class="container mt-4">
         <h2>Image</h2>
         <p>The .img-fluid class makes the image scale nicely to the parent element (resize the browser window to see the effect):</p>
