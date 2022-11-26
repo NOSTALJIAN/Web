@@ -11,15 +11,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/591ebcb214.js" crossorigin="anonymous"></script>
     <style>
-        .fakeimg {
-            height: 200px;
-            background: #aaa;
-        }
         #button {
             text-decoration: none;
         }
-        body {
-            width: auto;
+        footer {
+            position:fixed;
+            bottom: 0; left: 0;
         }
     </style>
 </head>
@@ -88,9 +85,9 @@
     </nav>
     <!-- Navbar End -->
 
-    <div class="container m-5">
-        <div class="row">
-            <div class="col-sm-4">
+    <div class="container-fluid mt-5">
+        <div class="container-fluid row">
+            <div class="container-fluid col-sm-2">
                 <h2>📸</h2>
                 <h5>Jian Seo</h5>
                 <img class="img-fluid" src="https://avatars.githubusercontent.com/u/117153720?v=4" style="height: auto;" alt="me">
@@ -125,7 +122,7 @@
                 </table>
 
             </div>
-            <div class="col-sm-8 mb-5">
+            <div class="container-fluid col-sm-9 ms-1 mb-5">
                 <h2>MY FIRST WEB PAGE</h2>
                 <h5>Nov 26, 2022</h5>
                 <img class="img-fluid" src="https://github.com/NOSTALJIAN/TIL/blob/master/IMAGE/PalaceOfVersailles.jpg?raw=true" style="height: auto;" alt="PalaceOfVersailles">
@@ -169,8 +166,8 @@
     </div>
 
     <!-- Footer Start -->
-    <footer class="p-1 mt-5 bg-secondary text-white text-center" style="position: fixed; width: 100%; bottom: 0; left: 0;">    <!-- style="position: fixed; width: 100%; bottom: 0;" -->
-        <p class="mt-2">Jian's Bootstrap Page</p>
+    <footer class="container-fluid mt-5 bg-secondary text-white text-center">    <!-- style="position: fixed; width: 100%; bottom: 0;" -->
+        <p class="m-2">Jian's Bootstrap Page</p>
     </footer>
     <!-- Footer End -->
 </body>
