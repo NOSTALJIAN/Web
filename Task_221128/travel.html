@@ -11,8 +11,26 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/591ebcb214.js" crossorigin="anonymous"></script>
-<body>
+    <style>
+        body {
+            position: relative;
+        }
+    </style>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
     <!-- NAV -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-bottom">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#section1">Section 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section2">Section 2</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
     <nav class="navbar navbar-expand-sm bg-secondary navbar-dark sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="https://nostaljian.github.io/Web/Task_221128/webMain.html">NOSTALJIAN</a>
@@ -39,9 +57,10 @@
 
     <!-- MAIN -->
     <div class="container my-5">
-        <h2 class="mb-4">Want to go... ✈️</h2>
+        <h2 id="section1" class="my-4">Want to go... ✈️</h2>
+        <p>I haven't been to yet 🥹</p>
         <!-- Carousel -->
-        <div id="wantToGo" class="carousel slide" data-bs-ride="carousel">
+        <div id="wantToGo" class="mb-5 carousel slide" data-bs-ride="carousel">
             <!-- Indicators / dots -->
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#wantToGo" data-bs-slide-to="0" class="active"></button>
@@ -79,7 +98,51 @@
             <button class="carousel-control-next" type="button" data-bs-target="#wantToGo" data-bs-slide="next">
                 <span class="carousel-control-next-icon"></span>
             </button>
-        </div>
+        </div><br><hr>
+
+
+        <h2 id="section2" class="mt-5">Where I've been... ✈️</h2>
+        <p class="mt-4">A place that I remember because I liked it 🥰</p>
+        <!-- Carousel -->
+        <div id="wantToGo" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators / dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#wantToGo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#wantToGo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#wantToGo" data-bs-slide-to="2"></button>
+            </div>
+            <!-- The slideshow / carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://www.aladyinlondon.com/wp-content/uploads/2020/08/Shibuya-Crossing-Tokyo.jpg" alt="shibuya" class="d-block" style="height: 720px; width: 100%;">
+                    <div class="carousel-caption">
+                        <h3>Japan</h3>
+                        <p>Tokyo Shibuya</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://dukesavenue.com/wp-content/uploads/2020/10/Dukes-Avenue-Dotombori-Osaka-6-1536x2048.jpg" alt="osaka" class="d-block" style="height: 720px; width: 100%;">
+                    <div class="carousel-caption">
+                        <h3>Japan</h3>
+                        <p>Osaka Dotombori</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.squarespace-cdn.com/content/v1/54f64a5de4b0fac03fe48095/1509408815301-08C13F8V8RR2FAEK7CXE/image-asset.jpeg?format=500w" alt="fukuoka" class="d-block" style="height: 720px; width: 100%;">
+                    <div class="carousel-caption">
+                        <h3>Japan</h3>
+                        <p>Fukuoka Canal city</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Left and right controls / icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#wantToGo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#wantToGo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div><br><br>
     </div>
 </body>
 </html>
