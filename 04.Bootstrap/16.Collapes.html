@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapsible</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-fluid p-4 bg-dark text-white text-center">
+        <h1>Jian's Bootstrap Page</h1>
+        <p>Collapsible</p>
+    </div>
+
+    <!-- Collapsible -->
+    <div class="container mt-5">
+        <h2>Simple Collapsible</h2>
+        <p>Click on the button to toggle between showing and hiding content.</p>
+        <h4>button</h4>
+        <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo1">Simple collapsible</button>
+        <div id="demo1" class="collapse">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem laboriosam atque aliquam voluptatum, dolore doloribus quo beatae reprehenderit unde ab sint labore expedita sunt deleniti temporibus iusto, nulla suscipit repellat!
+        </div>
+        <hr>
+        <h4>a href</h4>
+        <a href="#demo2" class="btn btn-primary" data-bs-toggle="collapse">Simple collapsible</a>
+        <div id="demo2" class="collapse">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita suscipit ea accusamus corrupti voluptatum ipsam quos soluta magni, officiis laborum veritatis. Unde quas hic tenetur obcaecati dignissimos, soluta odit nemo!
+        </div>
+    </div>
+    <br><hr>
+
+    <!-- Show Collapsible Content By Default -->
+    <div class="container mt-5">
+        <h2>Show Collapsible Content By Default</h2>
+        <p>Add the show class next to the collapse class to show the content by defalut.</p>
+        <p>Click on the button to toggle between showing and hiding content.</p>
+        <h4>button</h4>
+        <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo3">Simple collapsible</button>
+        <div id="demo3" class="collapse show">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus reiciendis neque quisquam ipsam sequi voluptates commodi debitis quis cum adipisci autem ad in inventore tempora laboriosam, nesciunt dolorum unde quia.
+        </div>
+        <hr>
+        <h4>a href</h4>
+        <a href="#demo4" class="btn btn-primary" data-bs-toggle="collapse">Simple collapsible</a>
+        <div id="demo4" class="collapse show">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati laudantium eveniet laboriosam nisi qui alias libero consequatur molestias iste. Vel quam quae fuga ipsam molestiae, omnis maxime adipisci repellat aut.
+        </div>
+    </div>
+    <br><hr>
+
+    <!-- Accordion Example -->
+    <div class="container mt-5">
+        <h2>Accordion Example</h2>
+        <p><strong>Note:</strong> The <strong>data-bs-parent</strong> attribute makes sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.</p>
+
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header">
+                <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                    Collapsible Group Item #1
+                </a>
+            </div>
+            <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+                <div class="card-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+            </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+                        Collapsible Group Item #2
+                    </a>
+                </div>
+                <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, voluptate! Minima ex sed nesciunt illum blanditiis! Ipsum laborum aliquid beatae totam quasi nemo eligendi quis doloremque repellendus maiores. Minima, illum.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+                        Collapsible Group Item #3
+                    </a>
+                </div>
+                <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, voluptate! Minima ex sed nesciunt illum blanditiis! Ipsum laborum aliquid beatae totam quasi nemo eligendi quis doloremque repellendus maiores. Minima, illum.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+</body>
+</html>
