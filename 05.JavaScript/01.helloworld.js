@@ -17,4 +17,3 @@ console.log(5 + "! = " + fact(5));  //  5! = 120
 var obj = {};
 obj[ Symbol("heart") ] = 3;
 console.log(obj);
-
